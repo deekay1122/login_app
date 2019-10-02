@@ -1,5 +1,5 @@
-const User = require('../models/user');
-const ResetPasswordToken = require('../models/resetpasswordtoken');
+const User = require('../models/User');
+const ResetPasswordToken = require('../models/ResetPasswordToken');
 
 module.exports = (req, res) => {
   let errors = [];
