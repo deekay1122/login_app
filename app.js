@@ -3,7 +3,7 @@ const time = require('time');
 const now = new time.Date();
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
-// const mongoose = require('mongoose');
+const path = require('path');
 const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
@@ -52,6 +52,8 @@ app.use(
     saveUninitialized: true
   })
 );
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Passport middleware
 app.use(passport.initialize());
