@@ -32,6 +32,9 @@ sequelize
 
 sequelize.sync();
 
+//Products seeder
+// require('./seeders/productSeeder');
+
 // EJS
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
